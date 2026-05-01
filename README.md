@@ -9,6 +9,7 @@
 This project implements a complete **DDPM pipeline** — forward diffusion, reverse denoising, image generation, and reconstruction — without relying on any pretrained diffusion library. Every component is built using base PyTorch.
 
 The model learns to generate photorealistic 256×256 human faces by training on the [CelebA-HQ dataset](https://www.kaggle.com/datasets/denislukovnikov/celebahq256-images-only), progressively denoising images from pure Gaussian noise.
+<img width="1357" height="281" alt="image" src="https://github.com/user-attachments/assets/37e42303-2e21-4c3f-ac13-015fb442450c" />
 
 ---
 
@@ -185,10 +186,14 @@ The model trains stably with monotonically decreasing MSE loss. Per-epoch image 
 ### Image Generation
 
 5 diverse faces generated entirely from Gaussian noise using the full 400-step reverse process. The EMA model is used at inference for improved sharpness.
+<img width="713" height="720" alt="image" src="https://github.com/user-attachments/assets/71451a3d-98dc-4edb-b6ef-f48d8562ede4" />
+<img width="621" height="620" alt="image" src="https://github.com/user-attachments/assets/ddd05d73-10c3-4de3-83e2-39767f948fcd" />
+<img width="311" height="311" alt="image" src="https://github.com/user-attachments/assets/d9907bb9-9ab2-4640-a291-0b6027d0e4d4" />
 
 ### Image Reconstruction
 
 A target face is noised to `t = 300` (preserving low-frequency structure), then reverse-diffused back. The output resembles the target identity.
+<img width="1345" height="463" alt="image" src="https://github.com/user-attachments/assets/27eca8b6-0936-46a3-8fb4-402cb6934a7d" />
 
 ### Quantitative Metrics
 
