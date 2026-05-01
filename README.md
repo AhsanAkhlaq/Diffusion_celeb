@@ -10,6 +10,7 @@ This project implements a complete **DDPM pipeline** — forward diffusion, reve
 
 The model learns to generate photorealistic 256×256 human faces by training on the [CelebA-HQ dataset](https://www.kaggle.com/datasets/denislukovnikov/celebahq256-images-only), progressively denoising images from pure Gaussian noise.
 <img width="1357" height="281" alt="image" src="https://github.com/user-attachments/assets/37e42303-2e21-4c3f-ac13-015fb442450c" />
+<img width="1262" height="433" alt="image" src="https://github.com/user-attachments/assets/dc20e9ec-81c4-4d32-ac3b-3a9088b24151" />
 
 ---
 
